@@ -15,7 +15,7 @@ class POModel(models.Model):
 
     po_number = models.CharField(max_length=50, unique=True)
     vendor = models.ForeignKey(Vendor, on_delete=models.CASCADE)
-    order_date = models.DateTimeField()
+    order_date =  models.DateTimeField()
     delivery_date = models.DateTimeField()
     items = models.JSONField()
     quantity = models.IntegerField()
