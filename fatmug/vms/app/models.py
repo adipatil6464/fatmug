@@ -27,7 +27,7 @@ class POModel(models.Model):
 
     def __str__(self):
         return self.po_number
-=======
+
 class Vendor(models.Model):
     name = models.CharField(max_length=255)
     contact_details = models.TextField()
