@@ -52,6 +52,6 @@ def purchase_orders(request):
 def historicalperformance(request,id):
     data = HistoricalPerformance.objects.get(vendor__vendor_code=id)
 
-    print(data)
+    # print(data)
 
-    return HttpResponse(data)
+    return render(request,'hp.html',{'data':data})

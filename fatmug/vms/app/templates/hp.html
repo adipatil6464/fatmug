@@ -1,0 +1,24 @@
+{% include "base.html" %}
+{% block content %}
+<table class="table">
+    <thead>
+      <tr>
+        <th>vendor</th>
+        <th>date</th>
+            <th>on time delivery rate</th>
+            <th>quality rating avg</th>
+            <th>average response time</th>
+            <th>fulfillment rate</th>
+      </tr>
+    </thead>
+    <tbody>
+        <td>{{data.vendor}}</td>
+            <td>{{data.date}}</td>
+            <td>{{data.on_time_delivery_rate}}</td>
+            <td>{{data.quality_rating_avg}}</td>
+            <td>{{data.average_response_time}}</td>
+            <td>{{data.fulfillment_rate}}</td>
+          </tr>
+    </tbody>
+  </table>
+{% endblock %}
