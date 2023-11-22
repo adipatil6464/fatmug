@@ -50,6 +50,5 @@ class HistoricalPerformance(models.Model):
     quality_rating_avg = models.FloatField()
     average_response_time = models.FloatField()
     fulfillment_rate = models.FloatField()
-    def __str__(self):
-        return self.vendor
+    
 
